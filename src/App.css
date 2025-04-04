@@ -1,42 +1,160 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100px;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  padding: 8px;
+}
+
+.header {
+  width: 100%;
+  background-color: rgb(34, 78, 23);
+  display: flex;
+  padding: 10px 5px;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+}
+
+.ul {
+  display: flex;
+}
+
+.ul li {
+  margin: 0 10px;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.img {
+  height: 40px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  height: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.foto {
+  width: 100%;
+  height: 300px;
+  background: url("/imgs/fundo.jpg") no-repeat center center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  position: relative;
+}
+
+.item {
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(34, 78, 23);
+  text-align: center;
+
+
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.item h5 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: white
+}
+
+.item .preço {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(46, 43, 49);
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: rgb(34, 78, 23);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  height: 190px;
+}
+
+.footerimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footerimg img {
+  height: 50px;
+  width: auto;
+}
+
+.footertexto {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .container {
+      grid-template-columns: repeat(3, 1fr);
+      width: 100px;
+      height: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .item {
+      width: 160px;
+      border-radius: 10px;
+      text-align: center;
+      background-color:  rgb(34, 78, 23);
+
   }
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.fototexto {
+  font-size: 25px;
+  color: white;
+  margin: 0 30px 30px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: "Jaro", sans-serif;
 }
 
-.card {
-  padding: 2em;
+.footericon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+
 }
 
-.read-the-docs {
-  color: #888;
+.footericon img {
+  height: 95%;
+  width: auto;
+  padding: 15px;
 }
