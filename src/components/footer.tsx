@@ -2,7 +2,7 @@ import React from "react"
 import './footer.css'
 
 
-function footer ({produto, descrição}){
+function footer (){
     return(
         <>
         <footer className="footer">
