@@ -2,8 +2,8 @@
     background-color: rgb(34, 78, 23);
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    padding: 20px 0px;
+    /* font-size: 14px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
