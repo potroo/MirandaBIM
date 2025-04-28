@@ -19,8 +19,7 @@ function App() {
                  CHUTEIRAS</p>
          </div>
  </div>
- 
-     <div className=''>
+
          <div className="container">
              <div className="item">
                  <img src="https://imgnike-a.akamaihd.net/1300x1300/0163635AA8.jpg" alt="React Gato"/>
@@ -68,7 +67,6 @@ function App() {
                  <h5>Joma Ferrão</h5>
              </div>
          </div>
-     </div>
      <Footer/>
  
      

@@ -1,22 +1,28 @@
 body {
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
+  height: 100vh;
 }
 
 .container {
-  /* width: 100px; */
+  margin: 0 auto;
+  width: 40%;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, 100px);
   justify-content: center;
-  padding: 8px;
+  place-items: center;
   align-items: center;
+  justify-items: center;
+  align-content: center;
+  gap: 25px;
+  padding: 28px;
+  
 }
 
 
@@ -41,7 +47,7 @@ body {
 }
 
 .foto {
-  width: 100vw;
+  width: 100%;
   height: 300px;
   background: url("/imgs/fundo.jpg") no-repeat center center;
   background-size: cover;
